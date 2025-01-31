@@ -1,0 +1,23 @@
+<!--En este archivo se ejemplifica cómo establecer columnas(y filas) en una página web por medio de la 
+estructura grid empleando los modificadores explícitos-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Columnas y Filas por Medio de Grid</title>
+    <link rel="stylesheet" href="columns_rows.css">
+</head>
+<body>
+    <!--La estructura grid permite establecer un sistema de rejilla(plano cartesiano) que genera un sistema de ubicación de los elementos por medio de su par cartesiano-->
+    <div style="display: grid; grid-template-columns: repeat(3,1fr);background-color: bisque;">
+        <!--Las coordenadas se fijan por columnas(coordenada x) y filas(coordenada y)-->
+       <div style="grid-column: 1;grid-row: 1;"><center><h1 style="font-weight: bold;">1</h1></center></div>
+       <div style="grid-column: 2;grid-row: 1;"><center><h1 style="font-weight: bold;">2</h1></center></div>
+       <div style="grid-column: 3;grid-row: 1;"><center><h1 style="font-weight: bold;">3</h1></center></div>
+       <div style="grid-column: 1;grid-row: 2;"><center><h1 style="font-weight: bold;">4</h1></center></div>
+       <div style="grid-column: 2;grid-row: 2;"><center><h1 style="font-weight: bold;">5</h1></center></div>
+       <div style="grid-column: 3;grid-row: 2;"><center><h1 style="font-weight: bold;">6</h1></center></div>
+    </div>
+</body>
+</html>

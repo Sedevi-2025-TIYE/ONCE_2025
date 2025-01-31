@@ -1,0 +1,10 @@
+div div{
+    transition: 0.2s all ease-in-out;
+    border-radius: 4px dashed black;
+}
+
+div div:hover{
+    transform: scale(1.1);
+    background-color: rgb(9, 107, 219);
+    box-shadow: 2px 1px rgba(0, 0, 0, 0.491);
+}
