@@ -1,0 +1,19 @@
+/*Bajo esta estructura es importante aclarar que el procedimiento que realiza el navegador al renderizar
+implica el tomar el total de elementos y dividirlos entre las columnas especificadas, de modo que estas se repartan de la forma más equilibrada posible. Por lo que el número de elementos debe ser múltiplo de la cantidad de columnas, de no ser así la distribución del espacio no va a ser equitativa.*/
+#columns{
+    column-count: 4;
+    column-gap: 20px;
+}
+
+#columns div{
+   transition: all 0.2s ease-in-out;
+   height: 70px;
+}
+
+#columns div:hover{
+    background-color: yellow !important;
+    color: red !important;
+    transform: scale(1.1);
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.845);
+}
+
